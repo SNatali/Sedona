@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>каталог</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  	<link rel="stylesheet" href="css/reset.css">
+    <link href="css/sedona-index.css" rel="stylesheet">
+    
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+	
+		 <!--HEADER-->
+
+	<header>
+        <div class="container clearfix">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Прайс-лист</a>
+                    </li>
+                </ul>
+            </nav>
+                <div class="logo">
+                    <a href="#" class="logotip"><img src="" alt=""></a>
+                </div>
+            <section class="select-booking">
+            <form action="#" method="get">
+                <div class="first-select-booking"><!--можно ли в тег форму вставлять div по логике я думаю да ведь form блочный???-->
+                    <p>инфракструктура:</p>
+                        <input type="radio" name="quest-swimming" value="swimming-pool" id="swim" checked><!--можно ли с помощью css стилей сделать потом квадрат и всередине крестик поставить??или как то подругому делать???-->
+                            <label for="swim">бассейн</label>    
+                        <input type="radio" name="question-parking" value="parking" id="park" >
+                            <label for="park">парковка</label>    
+                        <input type="radio" name="question-wi-fi" value="wi-fi" id="w-f">
+                            <label for="w-f">wi-fi</label>
+                </div>    
+                <div class="second-select-booking"> 
+                    <p>тип жилья:</p>   
+                        <input type="radio" name="question-hotel" value="hotel" id="hot" checked>
+                    <label for="hot">гостиница</label><!--првильный код символа плюс???-->    
+                        <input type="radio" name="question-motel" value="motel" id="mot" checked>
+                    <label for="mot">мотель</label>    
+                        <input type="radio" name="question-appartment" value="appartment" id="flat" checked>  
+                    <label for="flat">апартаменты</label>
+                    <!--незнаю как сделать правильно,?????????-->       
+                </div> 
+                <div class="slider">
+                    <label for="searching">стоимость в сутки(Р)
+                     <table>
+                         <tr>
+                             <td> от 0</td>
+                             <td> до 3000</td>
+                         </tr>   
+                         </table>
+                    </label>
+                     <input type='range' min="1" max="3000" step="1" id="searching" > 
+                </div>
+                <div class="buttons">
+                    <a href="" class="btn-searching">показать</a>
+                </div>
+                
+            </form>
+            </section>
+        </div>
+        </header>
+
+              <!--CONTENT-->
+
+     <div class="content">   
+        <div class="container clearfix">
+            <p>найдено:3</p>
+            <p>сортировка:</p>
+            <ul>
+                <li><a href="" class="active">по цене</a></li>
+                <li><a href="">по типу</a></li>
+                <li><a href="">по рейтингу</a></li>
+            </ul>
+            <div class="top">
+                <a href=""></a>
+            </div>
+            <div class="down">
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="result">
+            <div class="wrap-result">
+               <img src="http://placehold.it/" alt="">
+                <div>
+                    <p>
+                        <a href="#">amara resort&amp;spa</a>
+                    </p>
+                <p>гостиница <span>от 3500 р.</span></p>
+                        <a href="#" class="btn-more">подробнее</a>
+                        <a href="#" class="btn-booking">забронировать</a>
+                </div> 
+            </div>
+            <div class="rating-block" id=''>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> 
+                <span></span>
+                <div class="rating">
+                    <span>рейтинг:</span>
+                </div>
+            </div>
+            <div class="wrap-result">
+               <img src="http://placehold.it/" alt="">
+                <div>
+                    <p>
+                        <a href="#">desert quail inn</a>
+                    </p>
+                    <p>мотель<span>от 2000 р.</span></p>
+                        <a href="#" class="btn-more">подробнее</a>
+                        <a href="#" class="btn-booking">забронировать</a>
+                </div> 
+            </div>
+            <div class="rating-block" id=''>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> 
+                <span></span>
+                <div class="rating">
+                    <span>рейтинг:</span>
+                </div>
+            </div>
+            <div class="wrap-result">
+               <img src="http://placehold.it/" alt="">
+                <div>
+                    <p>
+                        <a href="#">villas at poco diablo</a>
+                    </p>
+                    <p>aпартаменты <span>от 4000 р.</span></p>
+                        <a href="#" class="btn-more">подробнее</a>
+                        <a href="#" class="btn-booking">забронировать</a>
+                </div> 
+            </div>
+            <div class="rating-block" id=''>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> 
+                <span></span>
+                <div class="rating">
+                    <span>рейтинг:</span>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+       
+
+
+              <!--FOOTER-->  
+
+    <footer class="main-footer">
+            <div class="container clearfix">
+                <section class="footer-contacts">
+                    &#034;visitsedona 
+                </section>
+                <section class="footer-social">
+                    <a href="#" class="social-btn social-btn-tw"></a>
+                    <a href="#" class="social-btn social-btn-fb"></a>
+                    <a href="#" class="social-btn social-btn-video"></a>
+                </section>
+                <section class="footer-copyright">
+                    <a href="#" class="btn">website by<span></span> htmlacademy.ru</a>
+                </section>
+            </div>
+        </footer>   
+
+          <!--JAVASCRIPT-->
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
