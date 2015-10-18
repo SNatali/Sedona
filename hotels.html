@@ -38,40 +38,41 @@
 
             <section class="select-booking">
             <form action="#" method="get">
-                <div class="first-select-booking"><!--можно ли в тег форму вставлять div по логике я думаю да ведь form блочный???-->
+                <div class="first-select-booking">
                     <p>инфракструктура:</p>
-                        <input type="CHECKBOX" name="quest-swimming" value="swimming-pool" id="swim" checked><!--можно ли с помощью css стилей сделать потом квадрат и всередине крестик поставить??или как то подругому делать???-->
+                        <input type="checkbox" name="quest" value="swimming-pool" id="swim" checked>
                             <label for="swim">бассейн</label>    
-                        <input type="radio" name="question-parking" value="parking" id="park" >
+                        <input type="checkbox" name="question" value="parking" id="park" >
                             <label for="park">парковка</label>    
-                        <input type="radio" name="question-wi-fi" value="wi-fi" id="w-f">
+                        <input type="checkbox" name="question" value="wi-fi" id="w-f">
                             <label for="w-f">wi-fi</label>
                 </div>    
                 <div class="second-select-booking"> 
                     <p>тип жилья:</p>   
-                        <input type="radio" name="question-hotel" value="hotel" id="hot" checked>
-                    <label for="hot">гостиница</label><!--првильный код символа плюс???-->    
-                        <input type="radio" name="question-motel" value="motel" id="mot" checked>
+                        <input type="checkbox" name="question" value="hotel" id="hot" checked>
+                    <label for="hot">гостиница</label>
+                        <input type="checkbox" name="question" value="motel" id="mot" checked>
                     <label for="mot">мотель</label>    
-                        <input type="radio" name="question-appartment" value="appartment" id="flat" checked>  
+                        <input type="checkbox" name="question" value="appartment" id="flat" checked>  
                     <label for="flat">апартаменты</label>
-                    <!--незнаю как сделать правильно,?????????-->       
                 </div> 
                 <div class="slider">
-                    <label for="searching">стоимость в сутки(Р)
-                     <table>
-                         <tr>
-                             <td> от 0</td>
-                             <td> до 3000</td>
-                         </tr>   
-                         </table>
-                    </label>
-                     <input type='range' min="1" max="3000" step="1" id="searching" > 
-                </div>
+                    <div class="range-filter">
+                         <div class="price-controls">
+                            от<input class="min-price" type="text" value="0">
+                             до <input class="max-price" type="text" value="3000">
+                        </div>
+                        <div class="range-controls">
+                            <div class="scale"><div width="100px;" class="bar"></div></div>
+                             <div class="toggle min-toggle"></div>
+                                <div class="toggle max-toggle"></div>
+                        </div>
+                    </div>
+                
                 <div class="buttons">
                     <input type="submit" class="btn-searching" value="Показать">
                 </div>
-                
+                </div>
             </form>
             </section>
         </div>
@@ -84,22 +85,22 @@
             <p>найдено:3</p>
             <p>сортировка:</p>
             <ul>
-                <li><a href="" class="active">по цене</a></li>
+                <li class="active"><span>по цене</span></li>
                 <li><a href="">по типу</a></li>
                 <li><a href="">по рейтингу</a></li>
             </ul>
             <div class="top">
-                <a href=""></a>
+                <a href="#"></a>
             </div>
             <div class="down">
-                <a href=""></a>
+                <a href="#"></a>
             </div>
         </div>
         <div class="result">
             <div class="hotel-img">
                 <img src="http://placehold.it/" alt="">
             </div>
-            <div class="">
+            <div class="title-hotel">
                 <h2><a href="#">amara resort&amp;spa</a></h2>
                 <p>гостиница </p>
                 <p>от 3500 р.</p>
@@ -111,59 +112,65 @@
             </div> 
             <div class="rating-block" id=''>
                 <span class="icon-star"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
                 <div class="rating">
                     <span>рейтинг:</span>
                 </div>
             </div>
-            <div class="wrap-result">
-               <img src="http://placehold.it/" alt="">
-                <div>
-                    <p>
-                        <a href="#">desert quail inn</a>
-                    </p>
-                    <p>мотель<span>от 2000 р.</span></p>
-                        <a href="#" class="btn-more">подробнее</a>
-                        <a href="#" class="btn-booking">забронировать</a>
-                </div> 
+           <div class="result">
+            <div class="hotel-img">
+                <img src="http://placehold.it/" alt="">
             </div>
+            <div class="title-hotel">
+                <h2><a href="#">amara resort&amp;spa</a></h2>
+                <p>гостиница </p>
+                <p>от 3500 р.</p>
+                <div class="links">
+                    <a href="#" class="btn-more">подробнее</a>
+                    <a href="#" class="btn-booking">забронировать</a>
+                </div>
+                
+            </div> 
             <div class="rating-block" id=''>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> 
-                <span></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
                 <div class="rating">
                     <span>рейтинг:</span>
                 </div>
             </div>
-            <div class="wrap-result">
-               <img src="http://placehold.it/" alt="">
-                <div>
-                    <p>
-                        <a href="#">villas at poco diablo</a>
-                    </p>
-                    <p>aпартаменты <span>от 4000 р.</span></p>
-                        <a href="#" class="btn-more">подробнее</a>
-                        <a href="#" class="btn-booking">забронировать</a>
-                </div> 
+            <div class="result">
+            <div class="hotel-img">
+                <img src="http://placehold.it/" alt="">
             </div>
+            <div class="title-hotel">
+                <h2><a href="#">amara resort&amp;spa</a></h2>
+                <p>гостиница </p>
+                <p>от 3500 р.</p>
+                <div class="links">
+                    <a href="#" class="btn-more">подробнее</a>
+                    <a href="#" class="btn-booking">забронировать</a>
+                </div>
+                
+            </div> 
             <div class="rating-block" id=''>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> 
-                <span></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
                 <div class="rating">
                     <span>рейтинг:</span>
                 </div>
             </div>
         </div>
     </div>
-            
+</div>   
        
 
 
