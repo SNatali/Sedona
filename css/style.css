@@ -1,0 +1,43 @@
+body{
+	font-size:14px;
+	line-height: 1.2 ;
+	color:#000;
+	font-family: 'PT Sans', sans-serif;
+	background: ;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.container{
+	width:1200px;
+	margin: 0 auto;
+}
+.main-navigation li{
+	float:left;
+	margin-right: 140px;
+	padding: 20px 0;
+}
+.main-navigation li:last-child{
+	margin-right: 0;
+}
+.main-navigation li:first-child{
+	margin-left: 70px;
+}
+.logo{
+	padding-top: 0;
+}
+.main-navigation a{
+	color: #000;
+}
+.main-bg{
+	background: url("../img/main-bg.jpg");
+	width: 1200px;
+}
+.column4{
+	float: left;
+	width: 33%;
+}
+.column8{
+	float: left;
+	width: 67%;
+
+}
