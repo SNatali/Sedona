@@ -40,11 +40,7 @@ q:before, q:after {
 	content: none;
 }
 
-.clearfix::after{
-content:" ";
-display:table;
-clear:both;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;

@@ -29,7 +29,7 @@ body{
 	color: #000;
 }
 .main-bg{
-	background: url("../img/main-bg.jpg");
+	background: url("../img/filter-background.jpg");
 	width: 1200px;
 }
 .column4{
@@ -40,4 +40,10 @@ body{
 	float: left;
 	width: 67%;
 
+}
+
+.clearfix::after{
+	content:" ";
+	display:table;
+	clear:both;
 }
