@@ -7,54 +7,70 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link href="css/style.css" rel="stylesheet">
        <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+</head>
 <body>
 	
 		 <!--HEADER-->
-
-	<header>
-        <div class="container clearfix">
-            <nav class="main-navigation left">
+<div class="container">
+	<header class="main-header clearfix">
+            <nav class="main-navigation ">
                 <ul>
                     <li>
-                        <a href="#">Главная</a>
+                        <a href="#">ИНФОРМАЦИЯ</a>
                     </li>
                     <li>
-                        <a href="#">Информация</a>
+                        <a href="#">ФОТО И ВИДЕО</a>
                     </li>
                     <li class="logo">
-                        <a href="#" class="logotip"><img src="img/logo.png" width="138" height="70" alt=""></a>
+                    <a href="#" class="logotip"><img src="img/logo.png" width="138" height="70" alt=""></a>
                     </li>
                     <li>
-                        <a href="#">Новости</a>
+                        <a href="#">КАРТА ШТАТА</a>
                     </li>
                     <li>
-                        <a href="#">Прайс-лист</a>
+                        <a href="#">ГОСТИНИЦЫ</a>
                     </li>
                 </ul>
             </nav>
-    </header>
-    <main>
-            <section class="select-booking">
-            <form action="#" method="get">
-                <div class="first-select-booking">
-                    <p>инфракструктура:</p>
-                        <input type="checkbox" name="quest" value="swimming-pool" id="swim" checked>
-                            <label for="swim">бассейн</label>    
-                        <input type="checkbox" name="question" value="parking" id="park" >
-                            <label for="park">парковка</label>    
-                        <input type="checkbox" name="question" value="wi-fi" id="w-f">
-                            <label for="w-f">wi-fi</label>
-                </div>    
+  </header>
+
+
+    <main class="main-baground">
+        <div class="container-content">
+            <section class="select-booking clearfix">
+                <form action="#" method="get">
+                    <div class="first-select-booking">
+                        <p class="title-hotel">инфракструктура:</p>
+                        <div class="row">
+                            <input type="checkbox" name="quest" value="swimming-pool" id="swim" checked>
+                                <label for="swim">бассейн</label> 
+                        </div> 
+                         <div class="row">  
+                            <input type="checkbox" name="question" value="parking" id="park" >
+                                <label for="park">парковка</label>
+                        </div> 
+                         <div class="row">   
+                            <input type="checkbox" name="question" value="wi-fi" id="w-f">
+                                <label for="w-f">wi-fi</label>
+                        </div>
+                    </div>    
                 <div class="second-select-booking"> 
-                    <p>тип жилья:</p>   
+                    <p class="title-hotel">тип жилья:</p>   
+                     <div class="row">
                         <input type="checkbox" name="question" value="hotel" id="hot" checked>
-                    <label for="hot">гостиница</label>
+                        <label for="hot">гостиница</label>
+                    </div>
+                     <div class="row">
                         <input type="checkbox" name="question" value="motel" id="mot" checked>
-                    <label for="mot">мотель</label>    
-                        <input type="checkbox" name="question" value="appartment" id="flat" checked>  
-                    <label for="flat">апартаменты</label>
+                        <label for="mot">мотель</label> 
+                    </div>   
+                     <div class="row">
+                        <input type="checkbox" name="question" value="appartment" id="flat" checked>
+                        <label for="flat">апартаменты</label>
+                    </div>
                 </div> 
                 <div class="slider">
+                <p class="title-hotel">стоимость в сутки (Р):</p>
                     <div class="range-filter">
                          <div class="price-controls">
                             от<input class="min-price" type="text" value="0">
@@ -73,15 +89,15 @@
                 </div>
             </form>
             </section>
-        </div>
     </main>
+
 
               <!--CONTENT-->
 
      <div class="content">   
         <div class="filters clearfix">
-            <p>найдено:3</p>
-            <p>сортировка:</p>
+            <p class="search">найдено:3</p>
+            <p class="item-search">сортировка:</p>
             <ul>
                 <li class="active"><span>по цене</span></li>
                 <li><a href="">по типу</a></li>
@@ -202,7 +218,11 @@
                     <a href="#" class="btn">website by<span></span> htmlacademy.ru</a>
                 </section>
             </div>
-        </footer>   
+        </footer>
+        
+</div> 
+
+</div>
 
           <!--JAVASCRIPT-->
 
