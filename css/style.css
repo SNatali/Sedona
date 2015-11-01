@@ -92,7 +92,6 @@ body{
 	font-weight: bold;
 	line-height: 26px;
 	margin:0 auto;
-	width:445px;
 	text-align:center;	
 	
 }
@@ -110,13 +109,12 @@ body{
 }
 .column4{
 	float: left;
-	width: 35%;
+	width: 33.3333333%;
 
 }
 .column8{
 	float: left;
-	width: 65%;
-
+	width: 66.6666666%;
 }
 .title{
 	background: #81b3d2;
@@ -177,12 +175,11 @@ body{
 .content-wrap{
 
 }
-.content-item{
+/*.content-item{
 	display: inline-block;
 	vertical-align: top;
-	width: 390px;
+	}*/
 
-	}
 /*.accomodation{
 	background: url("../img/sprite.png");
 	width: 72px;
@@ -447,14 +444,19 @@ color: #fff;
 
 
 
-[class^="sprite-"]:after {
+/*div[class*="sprite-"]*/
 
+.sprite-accomodation:before,
+.sprite-food,
+.sprite-souvenir {
 	content: '';
 	width: 60px;
 	height: 60px;
+	display: block;
+	margin: 0 auto;
 	background: transparent url(../img/spr.png) no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: 0 0;
+	background-position: 50px -122px;
 
-}
+}s
