@@ -444,3 +444,17 @@ color: #fff;
 	font-family: inherit;
 	color: #000;
 }
+
+
+
+[class^="sprite-"]:after {
+
+	content: '';
+	width: 60px;
+	height: 60px;
+	background: transparent url(../img/spr.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 0;
+
+}
