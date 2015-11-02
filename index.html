@@ -17,19 +17,19 @@
 	<header class="main-header clearfix">
        		<nav class="main-navigation ">
        			<ul>
-                    <li class="first-li">
+                    <li class="text-left">
                         <a href="#">ИНФОРМАЦИЯ</a>
                     </li>
-                    <li class="second-li">
+                    <li class="text-left">
                         <a href="#">ФОТО И ВИДЕО</a>
                     </li>
                     <li class="logo">
-                    <a href="#" class="logotip"><img src="img/logo.png" width="138" height="70" alt=""></a>
+                        <a href="#" class="logotip"><img src="img/logo.png" width="138" height="70" alt=""></a>
                     </li>
-                    <li clss="fourth-li">
+                    <li class="text-right">
                         <a href="#">КАРТА ШТАТА</a>
                     </li>
-                    <li class="fifth-li">
+                    <li class="text-right">
                         <a href="#">ГОСТИНИЦЫ</a>
                     </li>
                 </ul>
@@ -124,16 +124,17 @@
 			</div>
 
 
-</main>
-	<div class="container">
+
+
 		<div class="title-interesting">
 			<h2 class="title-text">заинтересовались?</h2>
 			<p class="item-text">укажите предполагаемые датя поездки,<br>и мы покажем вам лучшие предложения гостинец в седоне</p>
+      <a href="#0" class="title-form">поиск гостиницы в седоне</a>
 		</div>
-	</div>	
+
 		<div class="form">
 			<form action="#" method="get">
-				<p class="title-form">поиск гостиницы в седоне</p>
+				
 					 <div class="form-row">
 					 	<label for="day-start">Дата заезда:</label> 
 					 	<input type="text" id="date" name="date1" placeholder="24 апреля 2014" >
@@ -144,19 +145,30 @@
 					</div>
 					<div class="form-row">
 						 <label for="adult">взрослые:</label>
-						 <input type="number" min="1" max="100" id="adult" name="count-adult" placeholder="2">
+             <div class="">
+                <button><i class="icon-minus"></i>-</button>
+                <input type="text" id="adult" name="count-adult" placeholder="2">
+                <button>+</button>
+             </div>
+
 
 					 	<label for="children">дети:</label>
-					 	<input type="number" min="1" max="100" id="adult" name="count-children" placeholder="0">
+            <div class="form-numbers">
+                <button><i class="icon-minus"></i>-</button>
+                <input type="text" id="adult" name="count-children" placeholder="0">
+                <button>+</button>
+            </div>
 					</div>
 				 	<button class="btn">найти</button>
 			</form>
 		</div>
+
 		<div class="map">
-			<img src="img/map.jpg" width="1200" height="593" alt="">
+			<!-- <img src="img/map.jpg" width="1200" height="593" alt=""> ФОНОМ!!! -->
 		</div>
 	</div>
 
+</main>
 		  <!--FOOTER-->  
 
 	<footer class="main-footer">
