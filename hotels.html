@@ -42,27 +42,27 @@
                         <p class="title-hotel">инфракструктура:</p>
                         <div class="row">
                         <label for="swim">
-                        <input type="checkbox" name="quest" value="swimming-pool" id="swim" checked class="icon"><span>бассейн</span></label> 
+                        <input type="checkbox" name="quest" value="swimming-pool" id="swim" checked class="icon"><span class="check">бассейн</span></label> 
                         </div> 
                          <div class="row">
                          <label for="park">  
-                            <input type="checkbox" name="question" value="parking" id="park" ><span class="">парковка</span></label>
+                            <input type="checkbox" name="question" value="parking" id="park" class="icon" ><span class="check">парковка</span></label>
                         </div> 
                          <div class="row">
                             <label for="w-f">   
-                            <input type="checkbox" name="question" value="wi-fi" id="w-f"><i class="icon-">wi-fi</i></label>
+                            <input type="checkbox" name="question" value="wi-fi" id="w-f" class="icon"><span class="check">wi-fi</span></label>
                         </div>
                     </div>    
                 <div class="second-select-booking"> 
                     <p class="title-hotel">тип жилья:</p>   
                      <div class="row"><label for="hot">
-                        <input type="checkbox" name="question" value="hotel" id="hot" checked><i class="icon-"></i>гостиница</label>
+                        <input type="checkbox" name="question" value="hotel" id="hot" checked class="icon"><span class="check">гостиница</span></label>
                     </div>
                      <div class="row"> <label for="mot">
-                        <input type="checkbox" name="question" value="motel" id="mot" checked><i class="icon-"></i>мотель</label> 
+                        <input type="checkbox" name="question" value="motel" id="mot" checked class="icon"><span class="check">мотель</span></label> 
                     </div>   
                      <div class="row"><label for="flat">
-                        <input type="checkbox" name="question" value="appartment" id="flat" checked><i class="icon-"></i>апартаменты</label>
+                        <input type="checkbox" name="question" value="appartment" id="flat" checked class="icon"><span class="check">апартаменты</span></label>
                     </div>
                 </div> 
                 <div class="slider">
@@ -75,9 +75,12 @@
                             </label>
                         </div>
                         <div class="range-controls">
+
                             <div class="scale">
+
                             <div  class="bar"></div>
-                        </div>
+
+                            </div>
                                     <div class="toggle toggle-min"></div>
                                     <div class="toggle toggle-max"></div>
                         </div>
@@ -103,12 +106,12 @@
 
             <span class="search">найдено: 3</span>
             <span class="item-search">сортировка:</span>
-            <a href="#" class="active">по цене</a>
-                <a href="#">по типу</a>
-                <a href="#">по рейтингу</a>
+            <a href="#" class="up-active">по цене</a>
+                <a href="#" class="passive">по типу</a>
+                <a href="#" class="passive">по рейтингу</a>
         </div>   
         <div class="up-down">
-                <a href="#" class="up"><i class="icon-up-dir"></i></a>
+                <a href="#" class="up-active"><i class="icon-up-dir"></i></a>
                 <a href="#" class="down"><i class="icon-down-dir"></i></a>
         </div>
 
@@ -124,9 +127,9 @@
                 </div>
 
                 <div class="about-hotel">
-                    <h2 class="name-hotel">
+                    <a class="name-hotel">
                      amara resort&amp;spa
-                    </h2>
+                    </a>
                         <p class="hotel">гостиница </p>
                         <p class="price">от 3500 р.</p>
                     <div class="links">
@@ -141,15 +144,15 @@
             <div class="rating-block" id=''>
 
                 <div class="stars">
-                    <!-- <span class="icon-star"></span> -->
                     <span class="icon-star"></span>
                     <span class="icon-star"></span>
                     <span class="icon-star"></span>
-                    <span class="icon-star"></span> 
+                    <span class="icon-star"></span>
+                    <!-- <span class="icon-star"></span>  -->
                 </div>    
                
                 <div class="rating">
-                    <span>рейтинг:</span>
+                    <span>рейтинг: 8,5</span>
                 </div>
 
             </div>
@@ -165,9 +168,9 @@
                 </div>
 
                 <div class="about-hotel">
-                    <h2 class="name-hotel">
+                    <a class="name-hotel">
                         desert quail inn
-                    </h2>
+                    </a>
                         <p class="hotel">мотель </p>
                         <p class="price">от 2000 р.</p>
                     <div class="links">
@@ -182,15 +185,15 @@
             <div class="rating-block" id=''>
 
                 <div class="stars">
+                    <span class="icon-star"></span> 
+                    <span class="icon-star"></span> 
+                   <!-- <span class="icon-star"></span>  -->
                     <!-- <span class="icon-star"></span> -->
                     <!-- <span class="icon-star"></span> -->
-                    <!-- <span class="icon-star"></span> -->
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
                 </div>    
                
                 <div class="rating">
-                    <span>рейтинг:</span>
+                    <span>рейтинг: 8,9</span>
                 </div>
 
             </div>
@@ -205,14 +208,18 @@
                     <img src="img/img5.jpg" width="135" height="90" alt="">
                 </div>
 
-                <div class="about-hotel">
-                    <h2 class="name-hotel">
+                <div class="about-hotel clearfix">
+                    <a class="name-hotel">
                         villas at poco diablo
-                    </h2>
+                    </a>
+                   
                         <p class="hotel">апартаменты </p>
                         <p class="price">от 4000 р.</p>
+                     
+               
                     <div class="links">
-                        <a href="#" class="btn-more">подробнее</a>
+                       
+                         <a href="#" class="btn-more">подробнее</a>
                         <a href="#" class="btn-booking">забронировать</a>
                     </div>
                     
@@ -231,7 +238,7 @@
                 </div>    
                
                 <div class="rating">
-                    <span>рейтинг:</span>
+                    <span>рейтинг: 9,2</span>
                 </div>
 
             </div>
@@ -248,16 +255,19 @@
               <!--FOOTER-->  
 
     <footer class="main-footer clearfix">
-                <section class="footer-contacts">
+                <section class="footer-contacts column4">
                     <p class="footer-text">&#9839;visitsedona</p> 
                 </section>
-                <section class="footer-social">
+                <section class="footer-social column4">
                     <a href="#" class="social-btn"><i class="icon-twitter"></i></a>
                     <a href="#" class="social-btn"><i class="icon-facebook"></i></a>
                     <a href="#" class="social-btn"><i class="icon-youtube"></i></a>
                 </section>
-                <section class="footer-copyright">
-                    <a href="#" class="">website by<img src="img/logo-academy.jpg" alt="" width="113" height="39"> </a>
+                <section class="footer-copyright column4">
+                <a href="#" class="">website by</a>
+                <a>
+                    <img src="img/logo-academy.jpg" alt="" width="113" height="39" class="hover-bg"> 
+                </a>
                 </section>
     </footer>   
 </div> 

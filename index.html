@@ -54,7 +54,7 @@
 			<!-- <div class="wrap-section clearfix"> -->
 				<div class="title column4">
 					<h3 class="title-white">настоящий<br>городок</h3>
-					<p class="number">&mdash; 1 &mdash;</p>
+					<p class="number">&mdash; &#8470; 1 &mdash;</p>
 					<p class="item-text-white1">седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
 				</div>
 				<div class="title-bg column8">
@@ -94,7 +94,7 @@
 					<img src="img/img2.jpg"  width="800" height="400" alt="">
 				</div>	<div class="title column4">
 					<h3 class="title-white">там есть<br>мост дъявола</h3>
-					<p class="number"><i class="icon-minus"></i>2<i class="icon-minus"></i></p>
+					<p class="number">&mdash; &#8470; 2 &mdash;</p>
 					<p class="item-text-white2">Да, по нему можно пройти!<br>Если конечно вы осмелитесь</p>
 				</div>
 			</div>
@@ -102,7 +102,7 @@
 				<!-- <div class="wrap-item"> -->
 				<div class="content-item column4">
 							<h3 class="title-black">небольшая<br>площадь</h3>
-							<p class="number-black"><i class="icon-minus"></i>3<i class="icon-minus"></i></p>
+							<p class="number-black">&mdash; &#8470; 3 &mdash;</p>
 							<p  class="item-text">ВСЕ достопримеча-<br>
 						тельности находятся очень </p>
 						</div>
@@ -110,14 +110,14 @@
 				<!-- <div class="wrap-item"> -->
 					<div class=" content-item column4">
 						<h3 class="title-black">красивая<br>дорога</h3>
-						<p class="number-black"><i class="icon-minus"></i>4<i class="icon-minus"></i></p>
+						<p class="number-black">&mdash; &#8470; 4 &mdash;</p>
 						<p  class="item-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br>НЕ СКУЧНО!</p>
 					</div>
 				<!-- </div> -->
 				<!-- <div class="wrap-item"> -->
 					<div class="content-item column4">
 						<h3 class="title-black">мало<br>туристов</h3>
-						<p class="number-black"><i class="icon-minus"></i>5<i class="icon-minus"></i></p>
+						<p class="number-black">&mdash; &#8470; 5 &mdash;</p>
 						<p  class="item-text">Большинство едет в гранд каньон и<br>толпится там </p>
 					</div>
 				<!-- </div> -->
@@ -129,7 +129,7 @@
 		<div class="title-interesting">
 			<h2 class="title-text">заинтересовались?</h2>
 			<p class="item-text">укажите предполагаемые датя поездки,<br>и мы покажем вам лучшие предложения гостинец в седоне</p>
-      <a href="#0" class="title-form">поиск гостиницы в седоне</a>
+      <a href="#0" class="title-form ">поиск гостиницы в седоне</a>
 		</div>
 
 		<div class="wrap-form">
@@ -139,11 +139,17 @@
 				
 					 <div class="form-row">
 					 	<label for="day-start">Дата заезда:
-					 	<input type="text" id="date" name="date1" placeholder="24 апреля 2014" class="form-days"><i class="icon-calendar"></i></label>
+					 		<div class="bg-calendar">
+					 			<input type="text" id="date" name="date1" value="24 апреля 2014"  class="form-days"><i class="icon-calendar"></i>
+					 		</div>
+					 	</label>
 					</div>
 					<div class="form-row">
 						 <label for="day-finish">Дата выезда: 
-						 <input type="text" id="day-finish" name="date2" placeholder="4 июля 2014" class="form-days"><i class="icon-calendar"></i></label>
+						 	<div class="bg-calendar">
+						 		<input type="text" id="day-finish" name="date2" value="4 июля 2014"  class="form-days"><i class="icon-calendar"></i>
+						 	</div>
+						 </label>	
 					</div>
 					
 		<div class="form-row ">
@@ -151,7 +157,7 @@
              <div class="adult-form">
              	<label for="adult">взрослые:</label>
                 <button class="btn-icon"><i class="icon-minus"></i></button>
-                <input type="text" id="adult" name="count-adult" placeholder="2" class="count">
+                <input type="text" id="adult" name="count-adult" value="2" class="count">
                 <button class="btn-icon"><i class="icon-plus"></i></button>
              </div>
 
@@ -159,29 +165,29 @@
             <div class="children-form">
             	<label for="children">дети:</label>
                	 	<button class="btn-icon"><i class="icon-minus"></i></button>
-                		<input type="text" id="adult" name="count-children" placeholder="0" class="count">
+                		<input type="text" id="adult" name="count-children" value="0" class="count">
                 	<button class="btn-icon"><i class="icon-plus"></i></button>
             </div>
-			</div>
+		</div>
 				
 				 	<a href="#"class="btn-form">найти</a>
 			
 			</form>
 		</div>
-		</div>
+	</div>
 
 		</div>
 
-      <footer class="main-footer clearfix">
-        <section class="footer-contacts">
+      <footer class="main-footer index-footer clearfix">
+        <section class="footer-contacts column4">
           <p class="footer-text">#visitsedona</p> 
         </section>
-        <section class="footer-social">
+        <section class="footer-social column4">
           <a href="#" class="social-btn"><i class="icon-twitter"></i></a>
           <a href="#" class="social-btn"><i class="icon-facebook"></i></a>
           <a href="#" class="social-btn"><i class="icon-youtube"></i></a>
         </section>
-        <section class="footer-copyright">
+        <section class="footer-copyright column4">
           <a href="#" class="academy__link">
             <span>website by</span>
             <img src="img/logo-academy.jpg" alt="" width="113" height="39"> </a>
