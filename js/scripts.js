@@ -2,12 +2,9 @@ var link = document.querySelector(".title-form");
 var form = document.querySelector(".form"); 
 
  link.addEventListener("click", function(event) {
- event.preventDefault();
- form.classList.add("form-show");
+	event.preventDefault();
+	form.classList.toggle("form-show");
  });
  // link.addEventListener("click", function(event) {
  // event.preventDefault(); 
  // form.classList.toggle("form-show"); 
-
- 
- 
