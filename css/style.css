@@ -972,7 +972,7 @@ a.name-hotel{
 }
 */
  
- /*[class^="icon-"]:before, [class*=" icon-"]:before {*/
+ [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "symbols-sedona";
   font-style: normal;
   font-weight: normal;
