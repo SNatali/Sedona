@@ -1,0 +1,1 @@
+var link=document.querySelector(".title-form"),form=document.querySelector(".form");link.addEventListener("click",function(a){a.preventDefault(),form.classList.toggle("form-show")});
